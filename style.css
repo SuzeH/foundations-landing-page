@@ -33,11 +33,6 @@ section {
     padding: 2rem;
 }
 
-.content-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-}
-
 h1, h2, h3, h4 {
     font-family: 'Poppins', 'OpenSans', sans-serif;
     font-weight: 400;
@@ -81,9 +76,9 @@ a {
     color: inherit;
 }
 
-.hero-section {
-    background: #1F2937;
-    color: #fff;
+.content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .hero-content, .header-content, .tile-content {
@@ -92,6 +87,15 @@ a {
     align-items: center;
     gap: 2rem;
 }
+
+button {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Header section  */
 
 .logo-name {
     display: flex;
@@ -103,12 +107,29 @@ a {
   color: #efefef;
 }
 
+/* Hero  */
+.hero-section {
+    background: #1F2937;
+    color: #fff;
+}
+
 .hero-image {
     width: 100%;
     max-width: 500px;
     height: auto;
     content: url('https://picsum.photos/id/11/380/200');
     border-radius: 8px;
+}
+
+.hero-section button {
+    background: #3B82F6;
+    color: #efefef;
+}
+
+.hero-section p {
+    max-width: 600px;
+    color: #cad2dc;
+    margin-bottom: 2rem;
 }
 
 /* Tile section  */
@@ -162,15 +183,27 @@ blockquote {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    padding: 2rem 2rem;
+    flex-direction: column;
+    padding: 1rem 2rem;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.25rem;
     color: #374151;
-    border-left: 4px solid #3B82F6; /* Blue accent */
+    border-left: 4px solid #3B82F6;
 }
 
-/* CTA section  */
+.quote-author {
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 0.5rem;
+    color: #1F2937;
+    text-align: right;
+}
+
+/* CTA section */
 .cta-section {
     background: #fff;
     color: #1F2937;
@@ -178,9 +211,12 @@ blockquote {
 }
 
 .cta-content {
+    display: flex;
+    border: 2px solid #efefef;
     background: #3B82F6;
     color: #efefef;
     max-width: 800px;
+    align-items: center;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 8px;
@@ -189,6 +225,23 @@ blockquote {
 .cta-text {
     display: flex;
     flex-direction: column;
+}
+
+.cta-text p {
+    color: #a2d7ff;
+}
+
+.cta-text h3 {
+    margin-top: 0;
+}
+
+.cta-section button {
+    background: #3B82F6;
+    color: #efefef;
+    border: 2px solid #efefef;
+    align-self: right;
+    height: min-content;
+    flex-shrink: 0;
 }
 
 /* Footer section  */
